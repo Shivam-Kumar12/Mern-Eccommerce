@@ -1,0 +1,142 @@
+/* General reset and font settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.header-nav {
+  background-color: #232f3e; /* Amazon-like dark background */
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.nav-link {
+  color: #fff !important;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: #febd69 !important; /* Amazon-like yellow hover */
+}
+
+.nav-item.dropdown .dropdown-menu {
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.dropdown-item {
+  color: #000;
+}
+
+.dropdown-item:hover {
+  background-color: #febd69; /* Amazon-like hover */
+  color: #fff;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #febd69;
+}
+
+/* Badge for cart */
+.ant-badge {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.ant-badge .nav-link {
+  color: #fff !important;
+}
+
+.navbar-nav .cart .nav-link:hover {
+  color: #febd69 !important;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .search-bar input {
+    width: 100%;
+  }
+}
+
+
+
+/* Categories page styles */
+.categories-container {
+  margin-top: 40px;
+  padding: 0 15px;
+}
+
+.categories-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.category-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+  transform: translateY(-3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .category-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .categories-container {
+    padding: 0;
+  }
+  .category-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
